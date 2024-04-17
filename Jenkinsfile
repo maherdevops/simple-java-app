@@ -1,6 +1,7 @@
 node{
     git branch: 'main', url: 'https://github.com/maherdevops/simple-java-app.git'
-    stage('build'){
+    stages{
+            stage('build'){
             try{
             sh'echo "build stage"'
             }
@@ -18,6 +19,8 @@ node{
         esle{
             sh'echo "skip test stage"'
         }
+    }
+
     }
 
     
