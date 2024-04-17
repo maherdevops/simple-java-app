@@ -14,7 +14,7 @@ node{
             sh'echo "test stage"'
 
         }
-        esle{
+        else{
             sh'echo "skip test stage"'
         }
     }
