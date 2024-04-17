@@ -1,5 +1,6 @@
 node{
     git branch: 'main', url: 'https://github.com/maherdevops/simple-java-app.git'
+    stages{
     stage('build'){
         try{
         sh'echo "build stage"'
@@ -17,5 +18,6 @@ node{
         else{
             sh'echo "skip test stage"'
         }
+    }
     }
 }
